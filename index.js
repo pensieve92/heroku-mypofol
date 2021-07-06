@@ -4,6 +4,10 @@ const express = require('express');
 const cors = require('cors');
 // db
 const db = require('./lib/db.config');
+// dotenv
+const dotenv = require('dotenv');
+// .env 사용 설정
+dotenv.config();
 
 // express 객체 생성
 const app = express();
