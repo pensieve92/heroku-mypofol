@@ -2,9 +2,13 @@
 const express = require('express');
 // cors 모듈 불러오기
 const cors = require('cors');
+// db
+const dbconfig = require('./lib/db.config');
 
 // express 객체 생성
 const app = express();
+
+dbconfig();
 
 app.use(cors({
     origin: true,
