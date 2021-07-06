@@ -13,19 +13,20 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="https://nextjs.org">Next.js typescript!</a>
         </h1>
         <button type='button' onClick={() => {
-            fetch('http://localhost:5000/api/data')
-            .then((res) => {
-              return res.json();
-            })
-            .then((data) => {
-              console.log(data);
-            });
-          }}>get data
+          fetch('http://localhost:5000/api/data')
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            console.log(data);
+          })
+        }}>
+          get data
         </button>
-
+        
       </main>
 
       <footer className={styles.footer}>
